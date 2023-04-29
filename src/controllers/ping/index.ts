@@ -1,4 +1,4 @@
-import { Lifecycle, ResponseObject, ResponseToolkit } from "@hapi/hapi";
+import { ResponseObject, ResponseToolkit } from "@hapi/hapi";
 
 export default {
   ping: (request: Request, h:ResponseToolkit): ResponseObject => {
