@@ -1,4 +1,5 @@
 import { Plugin, Request, ResponseObject, ResponseToolkit, Server } from "@hapi/hapi";
+import Ping from "@controllers/ping/index.js"
 
 const ping: Plugin<null> = {
   name: 'ping',
@@ -10,11 +11,7 @@ const ping: Plugin<null> = {
       options: {
         tags: ["ping"],
         notes: "ping",
-        handler: (request: Request, h:ResponseToolkit): ResponseObject => {
-          return h.response({
-            ping: 'pong'
-          })
-        }
+        handler: Ping.ping
       }
     })
   }

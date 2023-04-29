@@ -1,5 +1,5 @@
 import Glue from "@hapi/glue"
-import manifest from "./config/manifest.js";
+import manifest from "@config/manifest.js";
 import path from "path";
 import { fileURLToPath } from "url";
 

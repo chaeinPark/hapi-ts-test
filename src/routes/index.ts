@@ -1,5 +1,5 @@
-import { Manifest, PluginObject } from "@hapi/glue";
-import ping from "./ping/index.js";
+import { PluginObject } from "@hapi/glue";
+import ping from "@routes/ping/index.js";
 
 const plugins:  Array<(string|PluginObject)> = [
   {
